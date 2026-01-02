@@ -1,0 +1,54 @@
+#container {
+    height: 300px;
+    width: 80%;
+    background-color: azure;
+    margin: 10px auto;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row;
+    /* flex-direction: row-reverse;  align box right to left */
+    /* flex-direction: column-reverse;  align box bottom to top */
+    /* justify-content: flex-end;  */
+    justify-content: center;
+    justify-content: space-between;
+    /* flex-wrap: wrap; */
+    /* align-items: center ;  distributes our items along with cross axis */ 
+    /* align-content: flex-start;  distributes our items along with cross axis   */
+}
+
+h1 {
+    text-align: center;
+}
+
+#container div {
+    height: 100px;
+    width: 300px;
+    color: white;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+/* align self: flex-end; this is for one item priority*/
+
+#org {
+    flex-basis: 400px;
+    flex-grow: 1;
+}
+
+#red {
+    flex-shrink: 2;
+}
+
+/* 
+flex-grow | flex-shrink | flex-basis
+flex: 2 2 100px
+
+flex-grow | flex-basis
+flex: 2 100px
+
+flex-grow (unitless)
+flex: 2
+
+flex-basis
+flex: 100px
+ */

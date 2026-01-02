@@ -1,0 +1,35 @@
+div {
+    font-weight: 400;
+    color: blue;
+}
+
+h1 {
+    font-weight: bolder; 
+    /* font are bold according to its parent element */
+    text-decoration: red dotted line-through;
+    font-family: arial;
+    text-transform: uppercase;
+}
+
+a {
+    text-decoration: none;
+    font-family: avant garde, didot, impact;     
+    /* we write multiple font family so browser not allow first so second one applied */
+}
+
+p {
+    line-height: 2.5;
+    /* line height normal is normal and  we apply 2.5 so give space between lines is 2.5x form normal space  */
+    letter-spacing: 10px;
+    font-size: 5px; 
+}
+
+/* 
+units in csss
+96px-1 inch px is absolute unit
+
+reletive units
+% - is also unit it is apply according to parent element
+ em - change size according to current size of element
+ rem - change size according to parent size element 
+  */

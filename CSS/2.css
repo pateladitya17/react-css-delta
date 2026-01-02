@@ -1,0 +1,149 @@
+* {
+    font-family: 'Courier New';
+}
+
+#login {
+    background-color: lightgreen;
+}
+
+/* attribute selector */
+button[id="signup"] {
+    background-color: #b82b27;
+    color: white;
+}
+
+input[type="text"] {
+    color: yellow;
+}
+
+input[type] {
+    background-color: black;
+}
+
+.item {
+    background-color: blue;
+}
+/* descendant selector */
+/* #myid p */
+
+nav ul li /*nav li */ { 
+    color: pink;
+}
+
+/* adjacent sibling combinator */ 
+h2 + p {
+    color: orange;
+    /* here color apply to p */
+}
+
+/* child combinator */
+div > h2 {
+    color: purple;
+    /* only apply to immediate child */
+}
+
+/* pseudo class selector */
+#click:hover {
+    background-color: black;
+    color: white;
+}
+
+#click:active {
+    background-color: pink;
+}
+
+input[type="radio"]:checked + label {
+    color: red;
+}
+
+.check:nth-of-type(2n+1) {
+    background-color: lightskyblue;
+}
+
+/* pseudo element selector */
+h1::first-letter {
+    color:yellow;
+}
+
+#para::first-line {
+    color: crimson;
+}
+
+#para::selection {
+    background-color: yellowgreen;
+}
+
+/* 
+specificity
+_____           ______                        ______
+id > class,attribute,pseudo class > element,pseudo element
+more Selector > less Selector
+if Specificity same so we see cascading 
+
+inline Specificity
+    ___        ___   ___      ___
+inline style > id > class > element
+ */
+
+ /* important */
+ h3 {
+    color: chocolate !important; 
+    display: inline;
+ }
+
+ h3 {
+    color: yellow;
+ }
+
+ /* inheritance */
+ /* color inherit from parent div */
+ /* input and button are not inherit property from parent */
+ /* for inherit that we write */
+ /* input { background-color: inherit} */
+
+ #d {
+    background-color: blue;
+    border: 2px solid black;
+    border-top-right-radius: 50px;
+    padding: 10px;
+    margin: 20px;
+ }
+
+ #p {
+    background-color: yellow;
+ }
+ /* width height border are non inherit */  
+
+
+.divs {
+    height: 100px;
+    width: 100px;
+    border: 2px solid black;
+    margin: 5px;
+    display: inline-block;
+}
+
+#id1 {
+    display: none;
+}
+
+/* em - jo aapde font size ne em ma lakiye to e parent ni font size na according set thay */
+/*  and width and padding margin jevi properties ne em ma set kariye to e element na potana font size according set thay */
+
+#outter {
+    height: 400px;
+    width: 400px;
+    border: 2px solid black;
+    background-color: pink;
+    font-size: 10px;
+}
+
+#inner {
+     height: 100px;
+    width: 100px;
+    background-color: cornflowerblue;
+    font-size: 3em;
+    padding: 1em;
+}
+
+/*  rem - set font size of root element  */
